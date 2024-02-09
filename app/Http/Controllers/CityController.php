@@ -11,6 +11,8 @@ class CityController extends Controller
     /**
      * Display a listing of the resource.
      */
+    private $queries = array();
+
     public function index(Request $request)
     {
         $id = $request->input("id");
@@ -18,14 +20,16 @@ class CityController extends Controller
 
         $results = City::query()
             ->when($id, function ($query) use ($id) {
+                $this->queries["id"] = $id;
                 $query->where('id',  $id);
             })
             ->when($province_id, function ($query) use ($province_id) {
+                $this->queries["province"] = $province_id;
                 $query->where('province_id', $province_id);
             })
             ->get()->pluck('responseAPI');
 
-        return response()->api($results);
+        return response()->api($results,  $this->queries);
     }
 
     /**
