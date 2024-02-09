@@ -17,6 +17,7 @@
 ### Province API
 - **URL:** `/api/search/provinces`
 - **Docs:**
+  
 | Method | Parameter | Required | Type   | Description     |
 |--------|-----------|----------|--------|-----------------|
 | GET    | id        | no       | string | ID Province     |
@@ -25,6 +26,7 @@
 
 - **URL:** `/api/search/cities`
 - **Docs:**
+  
 | Method | Parameter | Required | Type   | Description     |
 |--------|-----------|----------|--------|-----------------|
 | GET    | id        | no       | string | ID City/Regency |
