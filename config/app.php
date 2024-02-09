@@ -184,5 +184,9 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
+    
+    // Fetch API RAJAONGKIR configuration
+    'api_key' => env('RAJAONGKIR_API_KEY'),
+    'uri' => env('RAJAONGKIR_API_URI'),
 
 ];
