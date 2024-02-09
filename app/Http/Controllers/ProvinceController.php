@@ -15,7 +15,6 @@ class ProvinceController extends Controller
     public function index(Request $request)
     {
         $id = $request->input("id");
-        $query = array();
 
         $results = Province::query()
             ->when($id, function ($query) use ($id) {
@@ -24,7 +23,7 @@ class ProvinceController extends Controller
             })
             ->get()->pluck('responseAPI');
 
-        return response()->api($results, $query );
+        return response()->api($results, $this->queries );
     }
 
     /**
