@@ -55,3 +55,7 @@
 | BEARER TOKEN | -         | yes      | string | token user      |
 | GET          | id        | no       | string | ID City/Regency |
 | GET          | province  | no       | string | ID Province     |
+
+
+# Note
+You can check file PostmanCollection.json for API Collection
