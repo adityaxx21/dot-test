@@ -4,7 +4,7 @@
 - laravel: 10
 # How To Install
 - clone from repositories
-- fill env `RAJAONGKIR_API_KEY`, `RAJAONGKIR_API_URI`, `RAJAONGKIR_DATA_SOURCE`
+- fill env DATABASE CONNECTION, `RAJAONGKIR_API_KEY`, `RAJAONGKIR_API_URI`, `RAJAONGKIR_DATA_SOURCE`
 - on `RAJAONGKIR_DATA_SOURCE` fill `api` for using data from fetching api and fill `database` for using data from database
 - run `composer install`
 - run `php artisan migrate`
