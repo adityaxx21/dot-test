@@ -16,8 +16,8 @@
 - open any tool for testing API such as Postman, Insomnia and many more
 # API Documentation
 
-### SignIn API
-- **URL:** `/api/signin`
+### Login API
+- **URL:** `/api/login`
 - **Docs:**
   
 | Method | Parameter | Required | Type   | Description             |
