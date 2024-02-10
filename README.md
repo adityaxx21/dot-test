@@ -4,6 +4,7 @@
 - laravel: 10
 # How To Install
 - clone from repositories
+- fill env DATABASE CONNECTION, `RAJAONGKIR_API_KEY`, `RAJAONGKIR_API_URI`
 - run `composer install`
 - run `php artisan migrate`
 - run `php artisan db:seed --class=ProvincesFetchAPISeed`
