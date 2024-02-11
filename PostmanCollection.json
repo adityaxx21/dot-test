@@ -7,12 +7,89 @@
 	},
 	"item": [
 		{
+			"name": "SignUp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://aditya-dots2.strangled.net/api/signup",
+					"protocol": "https",
+					"host": [
+						"aditya-dots2",
+						"strangled",
+						"net"
+					],
+					"path": [
+						"api",
+						"signup"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://aditya-dots2.strangled.net/api/login",
+					"protocol": "https",
+					"host": [
+						"aditya-dots2",
+						"strangled",
+						"net"
+					],
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "City",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://aditya-dots2.strangled.net/api/search/city?id=12&province=32",
+					"raw": "https://aditya-dots2.strangled.net/api/search/city",
 					"protocol": "https",
 					"host": [
 						"aditya-dots2",
@@ -27,11 +104,13 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "12"
+							"value": "12",
+							"disabled": true
 						},
 						{
 							"key": "province",
-							"value": "32"
+							"value": "32",
+							"disabled": true
 						}
 					]
 				}
@@ -45,60 +124,12 @@
 				"header": []
 			},
 			"response": []
-		},
-		{
-			"name": "Login",
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"url": "https://aditya-dots2.strangled.net/api/login"
-			},
-			"response": []
-		},
-		{
-			"name": "SignUp",
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"url": {
-					"raw": "https://aditya-dots2.strangled.net/api/signin",
-					"protocol": "https",
-					"host": [
-						"aditya-dots2",
-						"strangled",
-						"net"
-					],
-					"path": [
-						"api",
-						"signin"
-					],
-					"query": [
-						{
-							"key": "email",
-							"value": "adityayatma@gmail.com",
-							"disabled": true
-						},
-						{
-							"key": "password",
-							"value": "aditya2211",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"auth": {
 		"type": "bearer",
 		"bearer": {
-			"token": "4|Sbt8MORhjtXkTqqZLrD9xno6VMWZem7zRCdNGVeH04039c79"
+			"token": ""
 		}
 	},
 	"event": [
