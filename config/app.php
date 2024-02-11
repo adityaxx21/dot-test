@@ -188,5 +188,5 @@ return [
     // Fetch API RAJAONGKIR configuration
     'api_key' => env('RAJAONGKIR_API_KEY'),
     'uri' => env('RAJAONGKIR_API_URI'),
-
+    'data_source' => env('RAJAONGKIR_DATA_SOURCE', 'database'),
 ];
