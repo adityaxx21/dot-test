@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "efe8d742-c614-4701-b486-f1ed8a158883",
+		"name": "API Collection DOT Test Sprint 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20236546"
+	},
+	"item": [
+		{
+			"name": "City",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://aditya-dots1.strangled.net/api/search/cities",
+					"protocol": "https",
+					"host": [
+						"aditya-dots1",
+						"strangled",
+						"net"
+					],
+					"path": [
+						"api",
+						"search",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "12",
+							"disabled": true
+						},
+						{
+							"key": "province",
+							"value": "32",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Province",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://aditya-dots1.strangled.net/api/search/provinces",
+					"protocol": "https",
+					"host": [
+						"aditya-dots1",
+						"strangled",
+						"net"
+					],
+					"path": [
+						"api",
+						"search",
+						"provinces"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "21",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

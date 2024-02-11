@@ -4,6 +4,7 @@
 - laravel: 10
 # How To Install
 - clone from repositories
+- fill env DATABASE CONNECTION, `RAJAONGKIR_API_KEY`, `RAJAONGKIR_API_URI`
 - run `composer install`
 - run `php artisan migrate`
 - run `php artisan db:seed --class=ProvincesFetchAPISeed`
@@ -31,3 +32,7 @@
 |--------|-----------|----------|--------|-----------------|
 | GET    | id        | no       | string | ID City/Regency |
 | GET    | province  | no       | string | ID Province     |
+
+
+# Note
+You can check file PostmanCollection.json for API Collection
